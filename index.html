@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Title Page</title>
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+		<link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/sidebar-nav.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link href="fonts/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/icon-style.css">
+
+
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+	<div class="container contenedor">
+		<div class="row">
+
+			<div class="col-xs-12 col-sm-4 col-md-3 col-lg-2 menu">
+      <div class="caja-filtros">
+        <select class="selectpicker">
+            <option>Recomendados</option>
+            <option>Marcas</option>
+            <option>Nombre</option>
+            <option>Precio: menos a mayor</option>
+            <option>Precio: mayor a menor</option>
+        </select>
+
+        <a id="menu-toggle" href="#" class="btn btn-primary btn-lg toggle">Filtro por<!-- <i class="glyphicon glyphicon-bookmark"></i> --></a>
+      </div>
+<div id="sidebar-wrapper">
+  <ul class="sidebar-nav">
+    <a id="menu-close" href="#" class="btn btn-default btn-lg pull-right toggle"><i class="fa icon-close" aria-hidden="true"></i></a>
+    <div class="nav-side-menu" id="menu">
+            <!-- <div class="brand">Filtrar por:</div>
+              <i class="fa fa-caret-down fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>  -->
+              
+            <div class="menu-list">
+              <ul id="menu-content" class="menu-content out">
+              <a class="link" href="#"><li  data-toggle="collapse" data-target="#products" class="collapsed ">
+              <span class="fa icon-etiqueta-3"></span>
+                Marcas<i class="fa fa-angle-down" aria-hidden="true"></i></a> 
+                      </li>
+                      <ul class="sub-menu collapse" id="products">
+                        <li class="active">
+                          <input type="checkbox" id="test1" />
+                  <label for="test1">Makita</label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="test2" />
+                  <label for="test2">Skill</label>
+                </li>
+                        <li>
+                          <input type="checkbox" id="test3" />
+                  <label for="test3">Dremel</label>
+                </li>
+                <li>
+                          <input type="checkbox" id="test4" />
+                  <label for="test4">Bosch</label>
+                </li>
+                      </ul>
+
+              <a class="link" href="#"><li data-toggle="collapse" data-target="#service" class="collapsed"><span class="fa icon-peso-3"></span>
+                        Precios<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                      </li>  
+                      <ul class="sub-menu collapse" id="service">
+                          <li>
+                            <input type="checkbox" id="valor1" />
+                            <label for="valor1">Menos de $50.000</label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="valor2" />
+                            <label for="valor2">$50.000 a $120.000</label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="valor3" />
+                            <label for="valor3">$120.000 a $240.000</label>
+                          </li>
+                      </ul>
+              <a class="link" href="#"><li data-toggle="collapse" data-target="#new" class="collapsed"><span class="fa icon-peso-3"></span>
+                          Otro filtro<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                      </li>
+                      <ul class="sub-menu collapse" id="new">
+                          <li>
+                            <input type="checkbox" id="otro-filtro1" />
+                            <label for="otro-filtro1">Otro filtro</label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="otro-filtro2" />
+                            <label for="otro-filtro2">Otro filtro</label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="otro-filtro3" />
+                            <label for="otro-filtro3">Otro filtro</label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="otro-filtro4" />
+                            <label for="otro-filtro4">Otro filtro</label>
+                          </li>
+                      </ul>
+                  </ul>
+              </div>
+        </div>
+
+  </ul>
+</div>
+			</div>
+
+			<div class="col-xs-12 col-sm-8 col-lg-10 produc">
+				<div class="col-xs-12 col-sm-4 col-md-3 col-lg-3 caja">
+				  <figure>
+            <div class="caja-img">
+                    <span class="porciento">-20%</span>
+					   <a href="">
+              <img class="img-productos" src="img/productos/cama.jpg" alt="img_productos">
+					   </a>
+            </div>
+            <div class="caja-info">
+            <span class="porciento-right">-20%</span>
+					   <h3 class="title-produc">Set colchón balance 3 king base 5 zonas dividida respaldo velador…</h3>
+				       
+    				    <h3 class="valor">
+    					   $1.650.000
+                           <span class="tarjeta">
+                               <img src="img/tarjeta.png" class="img-responsive" alt="Image">
+                           </span>
+    				    </h3>
+    				    <h4 class="valor-internet">
+    					   Internet: $1.250.000
+    				    </h4>
+    				    <h5 class="valor-normal">
+    					   Normal: $15.000
+    				    </h5>
+                <div class="comparar">
+              <input type="checkbox" id="test-a" />
+                 <label for="test-a">Compara</label>
+                </div>
+    				    <hr class="linea-separa">
+    				    <h5 class="despach">Tipo de entrega</h5><span class="icon-camion-linea-2"></span><td><span class="icon-casa-linea-3"></span>
+                    </div>
+				  </figure>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-3 col-lg-3 caja">
+                <figure>
+                    <div class="caja-img">
+                    <span class="porciento">-20%</span>
+             <a href="">
+              <img class="img-productos" src="img/productos/cama.jpg" alt="img_productos">
+             </a>
+            </div>
+            <div class="caja-info">
+            <span class="porciento-right">-20%</span>
+             <h3 class="title-produc">Set colchón balance 3 king base 5 zonas dividida respaldo velador…</h3>
+               
+                <h3 class="valor">
+                 $1.650.000
+                           <span class="tarjeta">
+                               <img src="img/tarjeta.png" class="img-responsive" alt="Image">
+                           </span>
+                </h3>
+                <h4 class="valor-internet">
+                 Internet: $1.250.000
+                </h4>
+                <h5 class="valor-normal">
+                 Normal: $15.000
+                </h5>
+                <div class="comparar">
+              <input type="checkbox" id="test-b" />
+                 <label for="test-b">Compara</label>
+                </div>
+                <hr class="linea-separa">
+                <h5 class="despach">Tipo de entrega</h5><span class="icon-camion"></span><td><span class="icon-casona"></span>
+                    </div>
+          </figure>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-3 col-lg-3 caja">
+                <figure>
+                   <div class="caja-img">
+                    <span class="porciento">-20%</span>
+             <a href="">
+              <img class="img-productos" src="img/productos/cama.jpg" alt="img_productos">
+             </a>
+            </div>
+            <div class="caja-info">
+            <span class="porciento-right">-20%</span>
+             <h3 class="title-produc">Set colchón balance 3 king base 5 zonas dividida respaldo velador…</h3>
+               
+                <h3 class="valor">
+                 $1.650.000
+                           <span class="tarjeta">
+                               <img src="img/tarjeta.png" class="img-responsive" alt="Image">
+                           </span>
+                </h3>
+                <h4 class="valor-internet">
+                 Internet: $1.250.000
+                </h4>
+                <h5 class="valor-normal">
+                 Normal: $15.000
+                </h5>
+                <div class="comparar">
+              <input type="checkbox" id="test-c"/>
+                 <label for="test-c">Compara</label>
+                </div>
+                <hr class="linea-separa">
+                        <h5 class="despach">Tipo de entrega: <br> <span style="color:red;">Retiro en tienda</span> y <span style="color:red;">Despacho</span></h5>
+                    </div>
+                </figure>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-3 col-lg-3 caja">
+                <figure>
+                  <div class="caja-img">
+                    <span class="porciento">-20%</span>
+             <a href="">
+              <img class="img-productos" src="img/productos/cama.jpg" alt="img_productos">
+             </a>
+            </div>
+            <div class="caja-info">
+            <span class="porciento-right">-20%</span>
+             <h3 class="title-produc">Set colchón balance 3 king base 5 zonas dividida respaldo velador…</h3>
+               
+                <h3 class="valor">
+                 $1.650.000
+                           <span class="tarjeta">
+                               <img src="img/tarjeta.png" class="img-responsive" alt="Image">
+                           </span>
+                </h3>
+                <h4 class="valor-internet">
+                 Internet: $1.250.000
+                </h4>
+                <h5 class="valor-normal">
+                 Normal: $15.000
+                </h5>
+                <div class="comparar">
+              <input type="checkbox" id="test-d" />
+                 <label for="test-d">Compara</label>
+                </div>
+                <hr class="linea-separa">
+                        <h5 class="despach">Tipo de entrega: <br> <span style="color:red;">Retiro en tienda</span> y <span style="color:red;">Despacho</span></h5>
+                    </div>
+                </figure>
+				</div>
+			</div>
+		</div>
+	</div>
+
+		<!-- jQuery --> 
+		<script src="js/bootstrap.js"></script>
+   
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
+
+<!-- (Optional) Latest compiled and minified JavaScript translation files -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/i18n/defaults-*.min.js"></script>
+
+  <script src="js/sidebar.js"></script> 
+<script src="js/rotar.js"></script> 
+	</body>
+</html>
